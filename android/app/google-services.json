@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "531364711784",
+    "project_id": "trupoint-6ca45",
+    "storage_bucket": "trupoint-6ca45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531364711784:android:93fea5671a978643fd9add",
+        "android_client_info": {
+          "package_name": "com.example.trupoint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPXZaTv9FF7zXCWabAYkKXPxJy9mgy5sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
