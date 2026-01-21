@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:trupoint/features/auth/login_screen.dart';
@@ -6,7 +5,6 @@ import 'package:trupoint/features/auth/otp_screen.dart';
 import 'package:trupoint/features/auth/signup_screen.dart';
 import 'package:trupoint/features/auth/forgot_password_screen.dart';
 import 'package:trupoint/core/widgets/main_navigation_wrapper.dart';
-import 'package:trupoint/features/kyc/kyc_screen.dart';
 import 'package:trupoint/features/profile/contact_us_screen.dart';
 import 'package:trupoint/features/settings/privacy_policy_screen.dart';
 import 'package:trupoint/features/settings/terms_conditions_screen.dart';
@@ -46,14 +44,8 @@ class AppRoutes {
   static final GoRouter router = GoRouter(
     initialLocation: login,
     routes: [
-      GoRoute(
-        path: login,
-        builder: (context, state) => const LoginScreen(),
-      ),
-      GoRoute(
-        path: signup,
-        builder: (context, state) => const SignupScreen(),
-      ),
+      GoRoute(path: login, builder: (context, state) => const LoginScreen()),
+      GoRoute(path: signup, builder: (context, state) => const SignupScreen()),
       GoRoute(
         path: forgotPassword,
         builder: (context, state) => const ForgotPasswordScreen(),
@@ -113,10 +105,7 @@ class AppRoutes {
         path: notifications,
         builder: (context, state) => const NotificationsScreen(),
       ),
-      GoRoute(
-        path: splash,
-        builder: (context, state) => const SplashScreen(),
-      ),
+      GoRoute(path: splash, builder: (context, state) => const SplashScreen()),
       GoRoute(
         path: whatsappOtp,
         builder: (context, state) => const WhatsAppOtpScreen(),
